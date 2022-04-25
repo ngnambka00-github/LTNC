@@ -9,6 +9,7 @@ public class Account {
     private Date dateCreated;          // Ngay tao tai khoan
 
     public Account() {
+        // Khởi tạo các giá trị mặc định
         id = 0;
         balance = 0;
         annualInterestRate = 0;

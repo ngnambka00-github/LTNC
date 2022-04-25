@@ -9,7 +9,7 @@ public class Bai4_Main {
         System.out.println("2. withdraw");
         System.out.println("3. deposit");
         System.out.println("4. exit");
-    }
+    } // Hàm tạo menu
 
     public static void main(String[] args) {
         Account[] arrAccount = new Account[10];
@@ -17,18 +17,23 @@ public class Bai4_Main {
             arrAccount[i] = new Account();
             arrAccount[i].setId(i);
             arrAccount[i].setBalance(1000000);
-        }
+        } // Tạo danh sách các account
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
+            // Nhập id để tìm kiếm
             System.out.print("Enter your id: ");
             int id = scanner.nextInt();
+
             if (id < 1 || id > 9) {
                 System.out.println("Id khong ton tai! Vui long nhap lai id ...");
             } else {
                 while (true) {
                     System.out.println();
+                    // Vẽ menu
                     drawMenu();
+
+                    // Nhập lựa chọn
                     System.out.print("Enter your choice: ");
                     int choice = scanner.nextInt();
 
