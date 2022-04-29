@@ -1,6 +1,6 @@
 package Assignment_5;
 
-public class Circle_Main {
+public class Bai1_Main {
     public static void main(String[] args) {
         Circle c = new Circle();
 
