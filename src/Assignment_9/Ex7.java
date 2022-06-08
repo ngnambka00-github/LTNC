@@ -38,6 +38,7 @@ public class Ex7 {
             for (int i = 0; i < iterNum; i++) {
                 String rank = rankArr[random.nextInt(3)];
                 double salary = generateRandomSalary(rank);
+//                output.write("FirstName" + (i+1) + " LastName" + (i+1) + " " + rank + " " + salary + "\n");
                 output.printf("FirstName%d LastName%d %s %.2f\n", (i + 1), (i + 1), rank, salary);
             }
         } catch (FileNotFoundException e) {
